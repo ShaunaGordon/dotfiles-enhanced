@@ -1,0 +1,11 @@
+---
+- name: Update pacman and the system
+  become: yes
+  pacman: update_cache=yes upgrade=yes
+
+- name: Install packages
+  become: yes
+  aur: name={{ item }} state=present
+  with_items: "{{ system.packages }}"
+  when: server.packages is defined
+  tags: packages

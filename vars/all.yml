@@ -1,0 +1,19 @@
+---
+system:
+  packages: 
+    - 'git'
+    - 'gimp'
+    - 'sublime-text-dev'
+    - 'cloudstation'
+    - 'vagrant'
+    - 'jre'
+    - 'phpstorm'
+    - 'tmux'
+    - 'libreoffice-fresh'
+    - 'ttf-anonymous-pro'
+    - 'libvirt'
+    - 'virtualbox'
+    - 'virtualbox-guest-iso'
+    - 'virtualbox-host-modules'
+    - 'redshift'
+    - '0xdbe-eap'

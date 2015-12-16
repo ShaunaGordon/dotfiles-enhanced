@@ -1,0 +1,30 @@
+# Set up groups based on installation flow, using distro type names for consistency
+# NOTE: Not all of these are tested or in use yet. Just providing predictable hooks for now.
+
+# pacman-based (Arch, Antergos, ArchBang, Manjaro, etc)
+[arch]
+localhost	ansible_connection=local ansible_python_interpreter=/usr/bin/python2
+
+# apt-based (Debian, Ubuntu, Mint, CrunchBang, etc)
+[debian]
+#localhost	ansible_connection=local
+
+# rpm-based (Redhat, Fedora, Cent, Mandriva, etc)
+[redhat]
+#localhost	ansible_connection=local
+
+# Mac OS
+[darwin]
+#localhost	ansible_connection=local
+
+# Windows
+[microsoft]
+#localhost	ansible_connection=local
+
+# Stick them all in the local supergroup, so we can have a remote counterpart
+[local:children]
+arch
+debian
+redhat
+darwin
+microsoft
