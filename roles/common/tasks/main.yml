@@ -3,9 +3,14 @@
   become: yes
   pacman: update_cache=yes upgrade=yes
 
-- name: Install packages
-  become: yes
-  aur: name={{ item }} state=present
+- name: Install packages (via Yaourt)
+  yaourt: name={{ item }} state=latest
   with_items: "{{ system.packages }}"
-  when: server.packages is defined
+  when: system.packages is defined and (system.aur == 'yes' or system.aur == true)
+  tags: packages
+
+- name: Install packages (via Pacman)
+  pacman: name={{ item }} state=latest
+  with_items: "{{ system.packages }}"
+  when: system.packages is defined and (system.aur is not defined or system.aur == 'no' or system.aur == false)
   tags: packages

@@ -1,5 +1,6 @@
 ---
 system:
+  aur: true
   packages: 
     - 'git'
     - 'gimp'
@@ -10,7 +11,6 @@ system:
     - 'phpstorm'
     - 'tmux'
     - 'libreoffice-fresh'
-    - 'ttf-anonymous-pro'
     - 'libvirt'
     - 'virtualbox'
     - 'virtualbox-guest-iso'
