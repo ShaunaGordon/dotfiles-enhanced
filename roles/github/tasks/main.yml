@@ -1,0 +1,20 @@
+---
+# - name: Generate SSH key
+#   user:
+#     name: "{{ ansible_env.USER }}"
+#     generate_ssh_key: yes
+#     ssh_key_bits: 2048
+#     register: sshkey
+
+- name: Add key to Github
+  uri: 
+    url: "https://api.github.com/user/keys"
+    method: POST
+    user: "{{ github.user }}"
+    password: "{{ github.pass }}"
+    body:
+      title: "{{ github.keyname }}" 
+      key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    body_format: json
+    force_basic_auth: yes
+    status_code: 201

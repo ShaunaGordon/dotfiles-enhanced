@@ -17,3 +17,11 @@ system:
     - 'virtualbox-host-modules'
     - 'redshift'
     - '0xdbe-eap'
+    - 'python2-httplib2'
+git:
+  authorname: 'Shauna Gordon'
+  authoremail: 'shauna@shaunagordon.com'
+github:
+  keyname: 'Nymeria'
+  user: ShaunaGordon
+  pass: '{{ github_pass }}'

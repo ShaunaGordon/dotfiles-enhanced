@@ -6,11 +6,11 @@
 - name: Install packages (via Yaourt)
   yaourt: name={{ item }} state=latest
   with_items: "{{ system.packages }}"
-  when: system.packages is defined and (system.aur == 'yes' or system.aur == true)
+  when: system.packages is defined and system.aur
   tags: packages
 
 - name: Install packages (via Pacman)
   pacman: name={{ item }} state=latest
   with_items: "{{ system.packages }}"
-  when: system.packages is defined and (system.aur is not defined or system.aur == 'no' or system.aur == false)
+  when: system.packages is defined and not system.aur
   tags: packages

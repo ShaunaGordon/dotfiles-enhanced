@@ -2,5 +2,10 @@
 - hosts: all
   vars_files:
     - vars/all.yml
+  vars_prompt:
+    - name: 'github_pass'
+      prompt: 'Github password'
+      private: yes
   roles:
-    - common
+    # - common
+    - github
