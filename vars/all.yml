@@ -22,6 +22,6 @@ git:
   authorname: 'Shauna Gordon'
   authoremail: 'shauna@shaunagordon.com'
 github:
-  keyname: 'Nymeria'
+  keyname: 'Nymeria' # Use a unique name or the key won't be added to github
   user: ShaunaGordon
   pass: '{{ github_pass }}'
