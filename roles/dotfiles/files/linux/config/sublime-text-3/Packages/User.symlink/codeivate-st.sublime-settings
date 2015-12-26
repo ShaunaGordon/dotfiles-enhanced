@@ -1,3 +1,11 @@
 {
-	"machine_name": "Gregory Barclay"
+	"dialog": false,
+	"growl_active": true,
+	"machine_name": "Gregory Barclay",
+	"notify_send_active": true,
+	"notify_send_path": "/usr/bin/notify-send",
+	"pushover_active": false,
+	"pushover_user_id": "",
+	"user_id": false,
+	"user_token": false
 }

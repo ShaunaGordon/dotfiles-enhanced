@@ -22,7 +22,7 @@
     - { src: nano/nano, dest: nano }
     - { src: nano/nanorc, dest: nanorc }
     - { src: config/katerc, dest: config/katerc }
-    - { src: config/redshift.conf, dest: config/redshif.conf }
+    - { src: config/redshift.conf, dest: config/redshift.conf }
     - { src: config/sublime-text-3/Packages/User, dest: config/sublime-text-3/Packages/User }
     - { src: 'config/sublime-text-3/Package Control.sublime-package', dest: 'config/sublime-text-3/Installed Packages/Package Control.sublime-package'}
     - { src: git/git-completion.sh, dest: git-completion.sh }
