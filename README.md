@@ -26,4 +26,14 @@ Right now, it's the basis of my system. Exactly what's above, pretty much.
 
 vars/all.yml has the customizable stuff. Right now, that's the list of applications. More will probably come later.
 
-inventories/ holds info on the target machines. Right now, it's just local ones, where I've set up some groups on the off-chance platform-specific stuff is needed. I'm pretty exclusively on Arch right now, though it's possible I'll have another platform to deal with eventually. Until that day, though, don't expect any platform-specific stuff, unless you're running Arch. If you're provisioning a remote computer, just add a "remote" entry into the inventory that mirrors the "local" one.
+inventories/ holds info on the target machines. Right now, it's just local ones. The playbook also auto-detects the platform (Linux, Windows, Mac), package manager (pacman, apt, etc), and distribution (Antergos, Ubuntu, etc) and creates dynamic groups based on this information, for future use on other platforms.
+
+library/ includes an addon to allow use of Yaourt on arch systems. This module is slated to be added to one of the ansible-modules repos at some point, but I'm not sure when. It works right now, though.
+
+roles/ is currently split into three sections -- common (system setup), github (github-specific stuff), and dotfiles (well...the dotfiles). More will follow when I have time and am on my network to set up network stuff.
+
+# How about dependencies?
+
+Right now, the bootstrap script is only the ansible command, so you need to install ansible (ideally, 2.1 or later, since there's something in the 2.x line that isn't in the 1.x line, making this playbook fail on 1.x).
+
+You'll also need a way to get the repo. Either wget or git.

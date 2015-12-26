@@ -1,7 +1,7 @@
 ---
 system:
   aur: true
-  packages: 
+  packages:
     - 'git'
     - 'gimp'
     - 'sublime-text-dev'
@@ -19,6 +19,7 @@ system:
     - 'redshift'
     - '0xdbe-eap'
     - 'python2-httplib2'
+    - 'google-chrome-beta'
   home: '{{ ansible_env.HOME }}'
   ansible_root: '{{ ansible_env.PWD }}'
 git:
