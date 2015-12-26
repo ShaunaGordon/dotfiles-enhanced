@@ -18,4 +18,4 @@
       key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
     body_format: json
     force_basic_auth: yes
-    status_code: 201, 422
+    status_code: 201, 422 # 201 = key added, 422 = key name exists

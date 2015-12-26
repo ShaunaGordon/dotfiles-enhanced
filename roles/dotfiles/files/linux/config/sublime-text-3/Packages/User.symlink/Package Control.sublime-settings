@@ -1,0 +1,34 @@
+{
+	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"TagWrapper"
+	],
+	"installed_packages":
+	[
+		"BeautifyRuby",
+		"Codeivate",
+		"DocBlockr",
+		"Dotfiles Syntax Highlighting",
+		"Emmet",
+		"GitGutter",
+		"HTMLAttributes",
+		"HTMLBeautify",
+		"Laravel Blade Highlighter",
+		"Markdown Extended",
+		"MarkdownEditing",
+		"Monokai Extended",
+		"Package Control",
+		"Puppet",
+		"Sass",
+		"SideBarEnhancements",
+		"StringUtilities",
+		"Sublime Bookmarks",
+		"SVN",
+		"Tag",
+		"TagWrapper",
+		"VBScript",
+		"Xdebug Client"
+	]
+}

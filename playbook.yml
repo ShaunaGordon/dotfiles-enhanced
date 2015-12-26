@@ -1,11 +1,19 @@
 ---
 - hosts: all
+  tasks:
+    - group_by: key={{ ansible_distribution }}
+    - group_by: key={{ ansible_system }}
+    - group_by: key={{ ansible_pkg_mgr }}
+
+- hosts: all
   vars_files:
     - vars/all.yml
   vars_prompt:
     - name: 'github_pass'
       prompt: 'Github password'
       private: yes
+      no_log: True
   roles:
     # - common
-    - github
+    # - github
+    - dotfiles

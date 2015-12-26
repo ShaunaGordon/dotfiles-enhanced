@@ -11,6 +11,7 @@ system:
     - 'phpstorm'
     - 'tmux'
     - 'libreoffice-fresh'
+    - 'blender'
     - 'libvirt'
     - 'virtualbox'
     - 'virtualbox-guest-iso'
@@ -18,10 +19,14 @@ system:
     - 'redshift'
     - '0xdbe-eap'
     - 'python2-httplib2'
+  home: '{{ ansible_env.HOME }}'
+  ansible_root: '{{ ansible_env.PWD }}'
 git:
   authorname: 'Shauna Gordon'
   authoremail: 'shauna@shaunagordon.com'
 github:
-  keyname: 'Nymeria' # Use a unique name or the key won't be added to github
+  keyname: '{{ ansible_nodename }}' # Use a unique name or the key won't be added to github
   user: ShaunaGordon
   pass: '{{ github_pass }}'
+dotfiles:
+  filepath: '{{ system.ansible_root }}/roles/dotfiles/files/linux'

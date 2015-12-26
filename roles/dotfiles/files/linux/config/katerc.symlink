@@ -1,0 +1,77 @@
+[CTags]
+GlobalCommand=ctags -R --c++-types=+px --extra=+q --excmd=pattern --exclude=Makefile --exclude=.
+GlobalNumTargets=0
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+Config Revision=10
+Days Meta Infos=30
+Last Session=
+Modified Notification=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Startup Session=manual
+
+[KTextEditor::Search]
+Replace History=gynecologist
+Search History=gynocologist
+
+[KateSQLPlugin]
+SaveConnections=true
+
+[KateSQLPlugin][OutputCustomization][blob]
+backgroundColor=255,255,255
+font=Sans Serif,9,-1,5,50,0,0,0,0,0
+foregroundColor=31,28,27
+
+[KateSQLPlugin][OutputCustomization][bool]
+backgroundColor=255,255,255
+font=Sans Serif,9,-1,5,50,0,0,0,0,0
+foregroundColor=31,28,27
+
+[KateSQLPlugin][OutputCustomization][datetime]
+backgroundColor=255,255,255
+font=Sans Serif,9,-1,5,50,0,0,0,0,0
+foregroundColor=31,28,27
+
+[KateSQLPlugin][OutputCustomization][null]
+backgroundColor=255,255,255
+font=Sans Serif,9,-1,5,50,0,0,0,0,0
+foregroundColor=31,28,27
+
+[KateSQLPlugin][OutputCustomization][number]
+backgroundColor=255,255,255
+font=Sans Serif,9,-1,5,50,0,0,0,0,0
+foregroundColor=31,28,27
+
+[KateSQLPlugin][OutputCustomization][text]
+backgroundColor=255,255,255
+font=Sans Serif,9,-1,5,50,0,0,0,0,0
+foregroundColor=31,28,27
+
+[MainWindow]
+Height 1152=982
+State=AAAA/wAAAAD9AAAAAAAABWgAAAOgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAKgBTAFEATABDAG8AbgBuAGUAYwB0AGkAbwBuAHMAVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAFABTAFEATABUAG8AbwBsAEIAYQByAQAAApn/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 2048=1384
+
+[filebrowser]
+toolbar actions=up,home,show hidden,mkdir,back,forward,bookmarks,sync_dir,configure,short view,detailed view,tree view,detailed tree view
+
+[filetree]
+editShade=210,181,216
+listMode=false
+shadingEnabled=true
+showFullPathOnRoots=false
+sortRole=0
+viewShade=185,178,206

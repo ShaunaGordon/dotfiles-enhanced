@@ -1,0 +1,33 @@
+---
+- name: Template out gitconfig
+  template: src=gitconfig.j2 dest=~/.gitconfig force=yes
+
+- name: Ensure dotfile folders exist
+  file: path=~/.{{ item }} state=directory
+  with_items:
+    - config
+    - WebIde100
+    - config/sublime-text-3/Packages
+    - 'config/sublime-text-3/Installed Packages'
+
+- name: Remove existing folders
+  file: path=~/.{{ item }} state=absent
+  with_items:
+    - WebIde100/config
+    - config/sublime-text-3/Packages/User
+
+- name: Symlink dotfiles
+  file: src={{ dotfiles.filepath }}/{{ item.src }}.symlink dest=~/.{{ item.dest }} state=link force=yes
+  with_items:
+    - { src: nano/nano, dest: nano }
+    - { src: nano/nanorc, dest: nanorc }
+    - { src: config/katerc, dest: config/katerc }
+    - { src: config/redshift.conf, dest: config/redshif.conf }
+    - { src: config/sublime-text-3/Packages/User, dest: config/sublime-text-3/Packages/User }
+    - { src: 'config/sublime-text-3/Package Control.sublime-package', dest: 'config/sublime-text-3/Installed Packages/Package Control.sublime-package'}
+    - { src: git/git-completion.sh, dest: git-completion.sh }
+    - { src: git/gitignore, dest: gitignore }
+    - { src: bash/bashrc, dest: bashrc }
+    - { src: pkgmgr/yaourtrc, dest: yaourtrc }
+    - { src: profile/profile, dest: profile }
+    - { src: WebIde100/config, dest: WebIde100/config }

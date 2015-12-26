@@ -1,0 +1,12 @@
+{
+    "ide_key": "vagrant",
+    "port": 9000,
+    
+    "close_on_stop": true,
+    
+    "pretty_output": true,
+    
+    "launch_browser": true,
+    
+    "max_depth": 3,
+}

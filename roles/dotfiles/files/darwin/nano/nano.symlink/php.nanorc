@@ -1,0 +1,88 @@
+## PHP
+##
+syntax "php" "\.php[2345s~]?$"
+
+## HTML (assume everything is HTML until proven otherwise)
+color white "^.+$"
+
+## PHP
+color brightwhite start="<\?php" end="\?>"
+
+## strings, part 1
+#malformed
+color magenta,yellow "('|")"
+#override not malformed
+color brightmagenta start="['"]" end="[^\\]['"]"
+
+## functions
+icolor green start="[a-z_0-9]+\(" end=")[\);,$]*"
+
+## variables
+icolor brightgreen "\$[a-z_0-9]+"
+color brightgreen start="\$\{" end="\}"
+
+## types
+color green "([^\$]|^)\<(var|float|global|double|bool|char|int|enum|const)\>"
+
+## constants (assume constants are ALL_CAPS)
+color red "\<[A-Z_0-9]*\>"
+
+## numbers
+#decimal
+color yellow "\<\-?[0-9\.]+\>"
+#hex
+icolor yellow,blue "\<0x[0-9a-f]+\>"
+#octal
+color yellow,green "\<0[0-7]+\>"
+#boolean
+icolor cyan "([^\$]|^)\<(true|false)\>"
+
+## structure
+#note, $class is a variable, class is not.
+color brightblue "([^\$]|^)\<(class|require_once|require|extends|new|private|public|function|for|foreach|if|while|do|else|elseif|case|default|switch)\>"
+color brightred "([^\$]|^)\<(static)\>"
+
+## control flow
+color brightblue "([^\$]|^)\<(goto|continue|break|return)\>"
+
+## operators
+color green "(\^|\&|\||=|==|===|&&|\|\||\!==?|>|<|\.=?|\+|\-|\*|\/|\!|\!=|\!==|%=|\*=|\+=|\-=|\/=)"
+color black "(->|::)"
+
+## braces
+color black "(\{|\(|\)|\})"
+
+##sad wee end brackets etc
+color black "^[[:blank:]]*([\)\}][,;]?[[:blank:]]*)*$"
+
+## strings
+color black "'([^']*\\')*[^']*'"
+color black ""(\.|[^"])*""
+
+#kind of a hack here since backrefs don't work with start and end apparently
+color brightmagenta start="<<<(.*)" end=";$"
+
+## control flow
+#color brightblue "([^\$]|^)\<(goto|continue|break|return)\>"
+
+# vars in strings
+icolor brightcyan "\$[a-z0-9_]*"
+
+## comments
+color white "[^:]//.*"
+color white "^//.*"
+color white "(^|[^'"]+)#.*"
+color white start="/\*" end="\*/"
+
+##HTML again
+color white,blue "(<\?(php)?|\?>)"
+#color white,blue start="" end="<\?php"
+#color white,blue start="\?>" end=".$"
+#color brightred,blue "&[^&]"
+icolor cyan "&[a-z0-9#]{2,8};"
+
+## Trailing whitespace
+#color ,white "[[:blank:]]+$"
+
+## php markings
+color brightwhite "(<\?(php)?|\?>)"

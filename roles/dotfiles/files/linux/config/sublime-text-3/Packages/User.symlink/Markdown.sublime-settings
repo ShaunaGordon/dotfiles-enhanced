@@ -1,0 +1,19 @@
+{
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"draw_centered": false,
+	"extensions":
+	[
+		"md",
+		"markdown"
+	],
+	"font_face": "Cardo",
+	"font_size": 12,
+	"line_numbers": true,
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true,
+	"wrap_width": "automatic",
+	"caret_extra_top": 0,
+	"caret_extra_bottom": 0,
+	"caret_extra_width": 0
+}

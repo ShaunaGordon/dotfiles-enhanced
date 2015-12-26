@@ -1,0 +1,50 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+# Add git-completion
+source ~/.git-completion.sh
+
+# Color the prompt (in this case, light purple)
+export PS1="\[\033[1;35m\][\u@\h:\w]$\[\033[0m\] "
+
+# Init rbenv
+if $(rbenv &>/dev/null); then
+	eval "$(rbenv init -)"
+fi
+
+# Set Ruby env
+export ENV="development"
+
+# Because I don't always think of Octopress as a Ruby/Rake app
+alias octopress="rake"
+# With recent versions of rake on some of my machines, I've needed
+# to use "bundle exec rake" instead of just "rake". Aliasing that to
+# Octopress helps sandbox it on machines that have more than one version of Ruby/Rake
+# alias octopress="bundle exec rake"
+
+# Override standard "ls" to automatically color, list, and show hidden
+# Also add Mac-specific stuff
+# My gods, OSX is needy...
+	
+#ls override
+alias ls="ls -lAFGh"
+	
+# PATH additions
+export PATH="/usr/local/bin:/usr/local/sbin:$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+	
+# Homebrew Bash completion
+source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+	
+# Deal with Github's rate limiter
+export HOMEBREW_GITHUB_API_TOKEN="3eacd305e67dab664f039d4736c1b8485ea00ffc"
+
+
+# Alias artisan command, so I don't always have to explicitly invoke PHP
+# and let's shorten it a little bit
+alias arti="php artisan"

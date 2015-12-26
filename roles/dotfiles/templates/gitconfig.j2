@@ -1,0 +1,47 @@
+[user]
+    name = {{ git.authorname }}
+    email = {{ git.authoremail }}
+
+[color]
+    ui = true
+
+[alias]
+    # interactive mode to make complex commits
+    ai = add --interactive
+
+    # commit aliases - (grouped by prefix)
+    c = commit
+
+    # reset aliases (soft & hard)
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+
+    # command shortcuts
+    s = status
+    d = diff
+    a = add
+    co = checkout
+    b = branch
+    l = log
+    f = fetch
+    m = merge
+    p = push
+    
+    # svn shortcuts
+    sf = svn fetch
+    sr = svn rebase
+    sdd = svn dcommit --dry-run
+    sdc = svn dcommit                
+
+[core]
+    editor = {{ ansible_env.EDITOR }}
+
+[push]
+    default = current
+
+[apply]
+    whitespace = nowarn

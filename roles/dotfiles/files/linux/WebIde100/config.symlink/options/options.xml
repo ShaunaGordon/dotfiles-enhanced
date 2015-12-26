@@ -1,0 +1,10 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="2" />
+    <property name="PhpStorm.InitialConfiguration" value="true" />
+    <property name="installation.uid" value="990e6c91-2447-4512-9e16-18318f257341" />
+    <property name="PhpStorm.initialConfigurationShown" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Projects/ansible-dotfiles/roles/dotfiles/files/linux/phpstorm-settings.jar" />
+  </component>
+</application>

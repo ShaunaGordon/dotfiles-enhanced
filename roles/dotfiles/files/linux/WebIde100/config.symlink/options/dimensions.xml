@@ -1,0 +1,9 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="708" y="196" />
+    <location key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" x="683" y="323" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="960" y="230" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="494" height="537" />
+    <size key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" width="543" height="281" />
+  </component>
+</application>
