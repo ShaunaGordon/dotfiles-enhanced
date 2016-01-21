@@ -1,11 +1,11 @@
 {
 	"dialog": false,
 	"growl_active": true,
-	"machine_name": "Gregory Barclay",
+	"machine_name": "Nymeria (Sublime)",
 	"notify_send_active": true,
 	"notify_send_path": "/usr/bin/notify-send",
 	"pushover_active": false,
 	"pushover_user_id": "",
-	"user_id": false,
-	"user_token": false
+	"user_id": "89818d3d75fe373de1c7ff256c00785a40468d7c",
+	"user_token": "4e8aefe2da1cb45e3ca3e69a1ca8e415b26c18a2"
 }

@@ -3,7 +3,17 @@
     <location key="FileChooserDialogImpl.0.0.1920.1080" x="708" y="196" />
     <location key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" x="683" y="323" />
     <location key="WELCOME_SCREEN.0.0.1920.1080" x="960" y="230" />
+    <location key="#Browse_Repositories.0.0.1920.1080" x="538" y="117" />
+    <location key="#Plugins.0.0.1920.1080" x="555" y="113" />
+    <location key="GitCloneDialog.0.0.1920.1080" x="579" y="364" />
+    <location key="#Directories.0.0.1920.1080" x="723" y="287" />
+    <location key="SettingsEditor.0.0.1920.1080" x="436" y="208" />
     <size key="FileChooserDialogImpl.0.0.1920.1080" width="494" height="537" />
-    <size key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" width="543" height="281" />
+    <size key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" width="543" height="297" />
+    <size key="#Browse_Repositories.0.0.1920.1080" width="824" height="710" />
+    <size key="#Plugins.0.0.1920.1080" width="800" height="703" />
+    <size key="GitCloneDialog.0.0.1920.1080" width="835" height="281" />
+    <size key="#Directories.0.0.1920.1080" width="464" height="550" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1037" height="708" />
   </component>
 </application>

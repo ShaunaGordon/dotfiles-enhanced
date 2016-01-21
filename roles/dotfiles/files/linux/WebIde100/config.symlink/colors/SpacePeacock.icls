@@ -210,6 +210,11 @@
         <option name="FOREGROUND" value="cdcd00" />
       </value>
     </option>
+    <option name="CSS.COLOR">
+      <value>
+        <option name="FOREGROUND" value="6897bb" />
+      </value>
+    </option>
     <option name="CSS.COMMENT">
       <value>
         <option name="FOREGROUND" value="808080" />

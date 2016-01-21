@@ -14,3 +14,11 @@
   with_items: "{{ system.packages }}"
   when: system.packages is defined and not system.aur
   tags: packages
+
+- name: Run kernel modules for Vagrant Virtualbox
+  become: yes
+  shell: /sbin/rcvboxdrv setup
+
+- name: Add kernel module load file
+  become: yes
+  template: src=virtualbox.conf dest=/etc/modules-load.d/virtualbox.conf

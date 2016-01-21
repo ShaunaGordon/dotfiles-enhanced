@@ -1,8 +1,62 @@
 <application>
+  <component name="StatisticsApplicationUsages">
+    <group name="module type">
+      <project id="soapers-friend" values="WEB_MODULE" collectionTime="1453324792828" />
+      <project id="calendar" values="WEB_MODULE" collectionTime="1453325555830" />
+    </group>
+    <group name="vcs">
+      <project id="soapers-friend" values="Git" collectionTime="1453324792827" />
+    </group>
+    <group name="php-interpreters">
+      <project id="soapers-friend" values="0" collectionTime="1453324792957" />
+      <project id="calendar" values="0" collectionTime="1453325555851" />
+    </group>
+    <group name="file-type">
+      <project id="soapers-friend" values="UNKNOWN,SourceMap,JavaScript,PLAIN_TEXT,Images,Less,CSS,Cucumber,PHP,Blade,XML,YAML,JSON,htaccess" collectionTime="1453324792836" />
+      <project id="calendar" values="PLAIN_TEXT,XML,UNKNOWN" collectionTime="1453325555846" />
+    </group>
+    <group name="php-debug-skipped-paths">
+      <project id="soapers-friend" values="0" collectionTime="1453324792958" />
+      <project id="calendar" values="0" collectionTime="1453325555851" />
+    </group>
+    <group name="php-interpreter-version">
+      <project id="soapers-friend" values="not installed" collectionTime="1453324792956" />
+      <project id="calendar" values="not installed" collectionTime="1453325555851" />
+    </group>
+    <group name="php-include-path">
+      <project id="soapers-friend" values="0" collectionTime="1453324792952" />
+      <project id="calendar" values="0" collectionTime="1453325555850" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="soapers-friend" values="ECMAScript 5.1" collectionTime="1453324792952" />
+      <project id="calendar" values="ECMAScript 5.1" collectionTime="1453325555850" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="soapers-friend" values="Project,Project" collectionTime="1453324792951" />
+      <project id="calendar" values="Project,Project" collectionTime="1453325555850" />
+    </group>
+    <group name="Git">
+      <project id="soapers-friend" values="config.ssh.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.save.policy.STASH,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.push.autoupdate.disabled,data.remotes.in.project.1,config.repo.sync.NOT_DECIDED,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,data.remote.branches.count.1,data.local.branches.count.1" collectionTime="1453324792842" />
+      <project id="calendar" values="config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.update.type.BRANCH_DEFAULT,config.ssh.enabled,config.push.update.all.roots.enabled,config.force.push.enabled,config.save.policy.STASH,config.warn.about.crlf.enabled,config.push.autoupdate.disabled" collectionTime="1453325555848" />
+    </group>
+    <group name="php-servers">
+      <project id="soapers-friend" values="0" collectionTime="1453324792956" />
+      <project id="calendar" values="0" collectionTime="1453325555851" />
+    </group>
+  </component>
   <component name="UsageTrigger">
     <counts>
-      <entry feature="ideaapp.started" count="2" />
-      <entry feature="welcome.screen.WelcomeScreen.Configure" count="1" />
+      <entry feature="NewDirectoryProjectAction.PHP Empty Project" count="1" />
+      <entry feature="ide.settings.Appearance" count="2" />
+      <entry feature="ide.settings.Codeivate_Settings" count="1" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ideaapp.started" count="7" />
+      <entry feature="welcome.screen.ConfigureIcs" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="4" />
+      <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.Plugins" count="1" />
+      <entry feature="welcome.screen.null" count="1" />
     </counts>
   </component>
 </application>
