@@ -16,6 +16,8 @@ system:
     - 'trimage'
     - 'albert'
     - 'php'
+    - 'otf-fira-code'
+    - 'ttf-fira-code'
   home: '{{ ansible_env.HOME }}'
   ansible_root: '{{ ansible_env.PWD }}'
 git:
