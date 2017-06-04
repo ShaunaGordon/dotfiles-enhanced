@@ -11,11 +11,11 @@ system:
     - 'virtualbox'
     - 'virtualbox-guest-iso'
     - 'redshift'
-    - 'phpstorm-eap'
     - 'python2-httplib2'
     - 'google-chrome'
     - 'trimage'
     - 'albert'
+    - 'php'
   home: '{{ ansible_env.HOME }}'
   ansible_root: '{{ ansible_env.PWD }}'
 git:
@@ -27,3 +27,18 @@ github:
   pass: '{{ github_pass }}'
 dotfiles:
   filepath: '{{ system.ansible_root }}/roles/dotfiles/files/linux'
+  add_folders:
+    - config
+  # remove_folders:
+  #   - ...
+  links:
+    - { src: nano/nano, dest: nano }
+    - { src: nano/nanorc, dest: nanorc }
+    - { src: config/katerc, dest: config/katerc }
+    - { src: git/git-completion.sh, dest: git-completion.sh }
+    - { src: git/gitignore, dest: gitignore }
+    - { src: bash/bashrc, dest: bashrc }
+    - { src: pkgmgr/yaourtrc, dest: yaourtrc }
+    - { src: profile/profile, dest: profile }
+atom:
+  stars_user: ShaunaGordon
